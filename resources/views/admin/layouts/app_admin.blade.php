@@ -12,6 +12,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+	<!-- awesom -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">	
 </head>
 <body>
     <div id="app">
@@ -37,9 +39,9 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                     	<li class="dropdown">
-							<a hrer="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Blog</a>
+							<a hrer="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Catalog</a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="#">Caterories</a></li>
+								<li><a href="{{route('admin.category.index')}}">Caterories</a></li>
 								<li><a href="#">Materials</a></li>
 							</ul>
 						</li>

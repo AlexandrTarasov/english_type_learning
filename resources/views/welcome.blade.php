@@ -24,11 +24,17 @@
 
 </head>
 <body class="body">
-<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4"> <a class="navbar-brand" href="#">Tarasov Learn English</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse" id="navbarCollapse"> <ul class="navbar-nav mr-auto"> <li class="nav-item active"> <a class="nav-link" href="#">Main <span class="sr-only">(current)</span></a> </li> <li class="nav-item">
-            <a class="nav-link" href="#">Your texts</a>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4"> <a class="navbar-brand" href="#">Tarasov Learn English</a> 
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" 
+aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+ <div class="collapse navbar-collapse" id="navbarCollapse"> 
+	<ul class="navbar-nav mr-auto"> 
+		<li class="nav-item active"> <a class="nav-link" href="#">Main <span class="sr-only">(current)</span></a> </li> 
+		<li class="nav-item">
+            <a class="nav-link" href="#">Add texts</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Statistics</a>
+            <a class="nav-link" href="#" title="only for registred">Statistics</a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#">Grammer</a>
@@ -41,7 +47,7 @@
 		<ul class="navbar-nav rm-auto">
         @if (Route::has('login'))
           @auth
-              <li class="nav-item"><a class="nav-link" href="{{ url('/home') }}">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ url('/home') }}">Cabinet</a></li>
           @else
              <li class="nav-item" ><a class="nav-link" href="{{ route('login') }}">Login</a></li>
              <li class="nav-item" ><a class="nav-link" href="{{ route('register') }}">Register</a></li>
@@ -62,11 +68,11 @@
   				<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
 				
 				</div>
-				<form>
+				<!--form>
 					<div class="form-control"><label for="exampleFormControlFile1">Download your own file with text</label>
 								<input type=file class="form-control-file"> 
 					</div>
-				</form>
+				</form-->
 			</div>
 		</div>
 	</div>

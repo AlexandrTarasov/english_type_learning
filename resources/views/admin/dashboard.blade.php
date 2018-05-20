@@ -39,7 +39,7 @@
 			<a class="list-group-item" href="#">
 				<h4 class="list-group-item-heading">Категория первая</h4>
 				<p class="list-group-item-text">
-					Count of matetials
+					Amount of matetials
 				</p>
 			</a> 
 		</div>
@@ -48,7 +48,7 @@
 			<a class="list-group-item" href="#">
 				<h4 class="list-group-item-heading">First material</h4>
 				<p class="list-group-item-text">
-					Category
+					Amount of categories
 				</p>
 			</a> 
 		</div>
