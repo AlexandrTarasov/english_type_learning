@@ -1,8 +1,8 @@
-@extends('admin.layouts.app_admin')
+@extends ('admin.layouts.app_admin')
 
 @section('content')
 
-<div class="conteiner">
+<div class="container">
 	@component('admin.components.breadcrumb')
 		@slot('title') Add category @endslot
 		@slot('parent') Main @endslot
@@ -12,7 +12,10 @@
 	<hr />
 	
 	<form  class="form-horizontal" action="{{route('admin.category.store')}}" method="post">
-		{{csrf_field()}}
+		{{ csrf_field() }}
+
+		{{-- Form include --}}
+		@include('admin.categories.partials.form')
 	</form>
 		
 </div>

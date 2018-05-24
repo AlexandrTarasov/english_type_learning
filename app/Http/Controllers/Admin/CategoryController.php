@@ -26,11 +26,11 @@ class CategoryController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
+    {	
 	return view('admin.categories.create', [
-		'category' =>[], 
-		'categoies' => Category::with('children')->where('parent_id', '0') ->get(),
-		'delimiter' =>''
+		'category'   => [],
+		'categories' => Category::with('children')->where('parent_id', '0')->get(),
+		'delimiter'  => ''
 	]);
     }
 
@@ -42,7 +42,9 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+		Category::create($request->all());
+		return redirect()->route('admin.category.index');
+		
     }
 
     /**

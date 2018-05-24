@@ -6,7 +6,12 @@
             <name>advanced-english.loc</name>
         </data>
         <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>edfj</word>
             <word>endcomponent</word>
+            <word>foreach</word>
+            <word>lable</word>
+            <word>pablished</word>
+            <word>trt</word>
         </spellchecker-wordlist>
     </configuration>
 </project>
