@@ -46,8 +46,9 @@ class ArticleController extends Controller
         $article = Article::create($request->all());
 	//Categories
 	if($request->input('categories')) :
-		
+		$article->categories()->attach($request->input('categories'));
 	endif;
+	return redirect()->route('admin.article.index');
     }
 
     /**
