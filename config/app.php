@@ -176,7 +176,13 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-	 Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+	
+	//helper for netbeans
+	Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+	
+	// Our packges
+	Unisharp\Ckeditor\ServiceProvider::class,
+	
     ],
 
     /*

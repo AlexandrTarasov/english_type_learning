@@ -13,7 +13,7 @@
 
 <hr>
 
-<a href="{{route('admin.article.create')}}" class="btn btn-primary pull-right"><i class="far fa-plus-square"></i> Create article</a>
+<a href="{{route('admin.article.create')}}" class="btn btn-primary pull-right"><i class="far fa-plus-square"></i> Create material</a>
 
 <table class="table table-striped">
 	<thead>

@@ -31,10 +31,10 @@
 <input type="text" class="form-control" name="meta_title" placeholder="Meta Title" value="{{$article->meta_title or ""}}" required>
 
 <label for="">Meta descr</label>
-<input type="text" class="form-control" name="meta_descr" placeholder="Meta descr" value="{{$article->meta_description or ""}}" required>
+<input type="text" class="form-control" name="meta_description" placeholder="Meta descr" value="{{$article->meta_description or ""}}" required>
 
-<label for="">Meta keyword</label>
-<input type="text" class="form-control" name="meta_keyword" placeholder="Meta keyword" value="{{$article->meta_keyword or ""}}" required>
+<label for="">Meta keywords</label>
+<input type="text" class="form-control" name="meta_keywords" placeholder="Meta keyword" value="{{$article->meta_keywords or ""}}" required>
 
 
 <hr />

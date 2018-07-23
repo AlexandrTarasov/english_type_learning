@@ -8,7 +8,7 @@ use Illuminate\Support\Str;
 class Article extends Model
 {
 		//
-	protected $fillable = ['title', 'slug', 'description_short', 'description', 'image_show', 'meta_title', 'meta_description', 'meta_kayward', 'published', 'created_by', 'modified_by'];
+	protected $fillable = ['title', 'slug', 'description_short', 'description', 'image_show', 'meta_title', 'meta_description', 'meta_keywords', 'published', 'created_by', 'modified_by'];
 	
 	public function  setSlugAttribute($value){
 		$this->attributes['slug'] = Str::slug( mb_substr($this->title, 0, 40) ."-". \Carbon\Carbon::now()->format('dmyHi'), '-' );
@@ -16,6 +16,6 @@ class Article extends Model
 	// Polymorphic relation with cat
 	public function categories()
 	{
-		return $this->morphMany('App\Category', 'categoryable');
+		return $this->morphToMany('App\Category', 'categoryable');
 	}
 }

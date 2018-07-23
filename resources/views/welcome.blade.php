@@ -133,7 +133,7 @@ function changheText(changnumber)
 }
 
 // if getted parametr from url issn't emtpy assign it to text id
-if (location.search != ''){
+if (location.search !== ''){
 	text_id_from_url = location.search.slice(1);
 }
 
@@ -153,10 +153,10 @@ $( ".right" ).keypress(function(event) {
 	event.preventDefault(); //prevent default action (doens't set characters) 
 	char = event.key;	
 
-  if(char == 'Enter'){
+  if(char === 'Enter'){
   	pause_time['start'] = Date.now();
   	pause = confirm("Pause. Contine typing press \"OK\"");
-  	if(pause == true){pause_time['stop'] = Date.now(); 
+  	if(pause === true){pause_time['stop'] = Date.now(); 
   		pause_time['sum'] += pause_time['stop']-pause_time['start'];
   		alert(pause_time['sum']);
   	}
@@ -164,7 +164,7 @@ $( ".right" ).keypress(function(event) {
   else{
 	
 		if(right_str.length>0){
-			if(char == right_str.charAt(0)){
+			if(char === right_str.charAt(0)){
 			  
 			buffer = right_str.charAt(0);
 			right_str = right_str.slice(1);
@@ -177,8 +177,8 @@ $( ".right" ).keypress(function(event) {
 			 counter++;
 			 document.getElementById('counterDiv').innerHTML = counter;
 			 
-			if(counter == 1){ time_of_typing['start'] = Date.now()+pause_time['sum'];}
-			if(right_str.length == 1){time_of_typing[1] = Date.now();}
+			if(counter === 1){ time_of_typing['start'] = Date.now()+pause_time['sum'];}
+			if(right_str.length === 1){time_of_typing[1] = Date.now();}
 			
 			time_of_typing[1] = Date.now();
 			sec = ((time_of_typing[1]-(time_of_typing['start']+pause_time['sum']))/1000);
@@ -193,7 +193,7 @@ $( ".right" ).keypress(function(event) {
 
 			document.getElementById('timeDiv').innerHTML = minutes+' min '+sec+' sek.';
 
-			if(right_str==0){ alert("Усё напечатал. Опечаток "+typo_amout); }
+			if(right_str === 0){ alert("Усё напечатал. Опечаток "+typo_amout); }
 
 			}
 			else{ 

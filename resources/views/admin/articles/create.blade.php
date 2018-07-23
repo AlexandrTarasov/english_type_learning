@@ -16,7 +16,7 @@
 
 		{{-- Form include --}}
 		@include('admin.articles.partials.form')
-		<input type="hidden" name="created_by" value="{{Auth::id()}}"
+		<input type="hidden" name="created_by" value="{{Auth::id()}}">
 	</form>
 		
 </div>
