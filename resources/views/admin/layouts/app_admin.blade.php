@@ -38,6 +38,9 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
+						<li>
+							<a href="{{route('admin.index')}}">State panel</a>
+						</li>
                     	<li class="dropdown">
 							<a hrer="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Catalog</a>
 							<ul class="dropdown-menu" role="menu">

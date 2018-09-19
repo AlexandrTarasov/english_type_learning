@@ -44,11 +44,11 @@
 	</tbody>
 	<tbody>
 		<tr>
-                    <td colspan="3">
-                        <ul class="pagination pull-right">
-                            {{$categories->links()}}
-                        </ul>
-                    </td>
+			<td colspan="3">
+				<ul class="pagination pull-right">
+					{{$categories->links()}}
+				</ul>
+			</td>
 		</tr>
 	</tbody>
 </table>
