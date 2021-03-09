@@ -20,7 +20,7 @@
   @include('admin.articles.partials.categories', ['categories' => $categories])
 </select>
 
-<label for="">short descr</label>
+<label for="">Short descr</label>
 <textarea class="form-control" id="description_short" name="description_short">{{$article->description_short or ""}}</textarea>
 
 <label for="">Full descr</label>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Typing in English</title>
+	<title>Typing2 in English</title>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 <style type="text/css">
@@ -34,7 +34,7 @@ aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigati
             <a class="nav-link" href="#">Add texts</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" title="only for registred">Statistics</a>
+            <a class="nav-link" href="page/statistics" title="only for registred">Statistics</a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#">Grammer</a>
